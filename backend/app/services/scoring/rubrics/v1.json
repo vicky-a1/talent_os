@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "weights": {
+    "required_skills": 0.4,
+    "experience": 0.3,
+    "domain_match": 0.1,
+    "projects": 0.1,
+    "education": 0.1
+  },
+  "thresholds": {
+    "auto_advance": 80,
+    "manual_review": 60
+  }
+}

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@keyframes nefera-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nefera-shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.nefera-page-fade {
+  animation: nefera-page-fade 180ms ease-out both;
+}
+
+@keyframes nefera-page-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nefera-reveal {
+  animation: nefera-reveal 250ms ease-out both;
+}
+
+.nefera-skeleton {
+  background-image: linear-gradient(90deg, rgba(15, 23, 42, 0.04) 0%, rgba(15, 23, 42, 0.08) 20%, rgba(15, 23, 42, 0.04) 40%);
+  background-size: 1200px 100%;
+  animation: nefera-shimmer 1.3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nefera-page-fade {
+    animation: none !important;
+  }
+  .nefera-reveal {
+    animation: none !important;
+  }
+  .nefera-skeleton {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,15 @@
+**/node_modules/
+**/.next/
+**/__pycache__/
+*.pyc
+.env
+**/.env
+.env.local
+**/.env.local
+.venv/
+**/.venv/
+.DS_Store
+**/.DS_Store
+backend/tmp/
+**/tmp/*.pdf
+.gitmessage
